@@ -42,6 +42,7 @@
 
     <h1 id="result"></h1>
     <h2 id="per"></h2>
+    
 </div>
 <script>
 
@@ -51,9 +52,13 @@ function check() {
             let per = document.getElementById('per');
 
             let percentage = (obMarks / totalMarks) * 100;
+
+
+            
+            
             
 
-            if (percentage  >= 80 && percentage <=100) {
+            if (percentage  >= 80 && percentage <=100) { 
                 document.getElementById("result").innerHTML = "A+";
                 per.innerHTML = percentage + "%";
             }

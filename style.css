@@ -9,14 +9,14 @@ body{
 .container{
  text-align: center;
  font-size: 70px;
- color: rgb(4, 32, 3);
+ color: rgb(248, 255, 145);
 
 }
 
 h5{
     font-size: 22px;
     font-family: 'Courier New', Courier, monospace;
-    padding-top: 380px;
+    padding-top: 300px;
     color: rgb(254, 254, 255);
     margin-right: 10px;
     
@@ -31,7 +31,7 @@ h4 span{
    
     margin: 0;
     padding: 0;
-    animation: animate 2s linear infinite;
+    animation: animate 1s linear infinite;
 }
 
 
