@@ -63,23 +63,28 @@ function check() {
                 per.innerHTML = percentage + "%";
             }
             else if (percentage  >= 70 && percentage <=79) {
-                document.getElementById("result").innerHTML = "A1 ";
-                per.innerHTML = percentage + "%"
-
-            }
-            else if (percentage  >= 60 && percentage <=69) {
                 document.getElementById("result").innerHTML = "A ";
                 per.innerHTML = percentage + "%"
 
             }
-            else if (percentage  >= 50 && percentage <=49) {
+            else if (percentage  >= 60 && percentage <=69) {
                 document.getElementById("result").innerHTML = "B ";
                 per.innerHTML = percentage + "%"
 
             }
-            else if (percentage  <= 49) {
-                document.getElementById("result").innerHTML = "FAIL ";
+            else if (percentage  >= 59 && percentage <=49) {
+                document.getElementById("result").innerHTML = "C ";
                 per.innerHTML = percentage + "%"
+
+            }
+            else if (percentage  >= 49 && percentage <=39) {
+                document.getElementById("result").innerHTML = "D ";
+                per.innerHTML = percentage + "%"
+
+            }
+            else 
+                {document.getElementById("result").innerHTML = "FAIL ";
+                
 
             }
            
