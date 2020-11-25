@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="container">
+    
+
+    <h4>
+        <span>R</span>
+        <SPan>E</SPan>
+        <SPan>S</SPan>
+        <SPan>U</SPan>
+        <span>L</span>   
+        <span>T</span>
+        &nbsp;
+        <SPan>C</SPan>
+        <SPan>A</SPan>
+        <SPan>L</SPan>
+        <span>C</span>
+        <span>U</span>
+        <span>L</span>
+        <span>A</span>
+        <span>T</span>
+        <span>O</span>
+        <span>R</span>
+
+    </h4>
+
+
+
+
+    <form action="#" onsubmit="check()">
+        <input type="number" id="tMarks" placeholder="Total Marks">
+        <input type="number" name="" id="om" placeholder="ObtainedMark">
+        <button> Calculate </button>
+    </form>
+
+    <h1 id="result"></h1>
+    <h2 id="per"></h2>
+</div>
+<script>
+
+function check() {
+            let totalMarks = document.getElementById('tMarks').value;
+            let obMarks = document.getElementById('om').value;
+            let per = document.getElementById('per');
+
+            let percentage = (obMarks / totalMarks) * 100;
+            
+
+            if (percentage  >= 80 && percentage <=100) {
+                document.getElementById("result").innerHTML = "A+";
+                per.innerHTML = percentage + "%";
+            }
+            else if (percentage  >= 70 && percentage <=79) {
+                document.getElementById("result").innerHTML = "A1 ";
+                per.innerHTML = percentage + "%"
+
+            }
+            else if (percentage  >= 60 && percentage <=69) {
+                document.getElementById("result").innerHTML = "A ";
+                per.innerHTML = percentage + "%"
+
+            }
+            else if (percentage  >= 50 && percentage <=49) {
+                document.getElementById("result").innerHTML = "B ";
+                per.innerHTML = percentage + "%"
+
+            }
+            else if (percentage  <= 49) {
+                document.getElementById("result").innerHTML = "FAIL ";
+                per.innerHTML = percentage + "%"
+
+            }
+           
+                       
+}
+</script>
+
+
+<h5> CODING BY : MOHAMMAD MOBEEN</h5> 
+    
+
+</body>
+</html>

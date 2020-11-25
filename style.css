@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(to right, #000000, #1149b1, #000000);}
+
+.container{
+ text-align: center;
+ font-size: 70px;
+ color: rgb(4, 32, 3);
+
+}
+
+h5{
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 380px;
+    color: rgb(254, 254, 255);
+    margin-right: 10px;
+    
+}
+
+h4{
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h4 span{
+   
+    margin: 0;
+    padding: 0;
+    animation: animate 2s linear infinite;
+}
+
+
+
+@keyframes animate
+{
+    0%, 100%   
+    {
+
+        color: rgb(165, 30, 48);
+     
+        text-shadow: 0 0 10% #e5ff00b7,
+                    0 0 20%   #85ffff,
+                    0 0 40% #da7171,
+                    0 0 80% #f5ae5d,
+                    0 0 120% #dc66fa,
+                    0 0 200% #ff0000,
+                    0 0 300% #ff0000,
+                    0 0 400% #ff0000;
+}
+5%,95%
+{
+    
+color: rgb(16, 233, 45);
+
+text-shadow: 0 0 10px none;
+
+
+}
+
